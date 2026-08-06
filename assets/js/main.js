@@ -37,6 +37,18 @@
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ticker: clone content until each half spans the viewport (halves must stay
+     identical for the -50% translate loop) */
+  var track = document.querySelector(".ticker-track");
+  if (track) {
+    var baseHTML = track.innerHTML;
+    var guard = 0;
+    while (track.scrollWidth < window.innerWidth * 2 && guard < 6) {
+      track.innerHTML += baseHTML;
+      guard++;
+    }
+  }
+
   /* contact form */
   var form = document.getElementById("contact-form");
   if (form) {
@@ -61,6 +73,7 @@
 
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
+      if (!form.reportValidity()) return;
       if (form.querySelector("input[name=_honey]").value) return; /* bot */
 
       errorBox.classList.remove("show");
@@ -83,6 +96,8 @@
         })
         .then(function () {
           card.classList.add("sent");
+          var head = card.querySelector(".form-success h2");
+          if (head) head.focus();
         })
         .catch(function () {
           /* AJAX blocked — fall back to native POST (redirects back with ?sent=1).

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="18" fill="#12100b" />
+  <g transform="translate(0 4)">
+    <polygon points="50,4 54.38,12 45.62,12" fill="#52411f" />
+    <polygon points="44.05,14.86 55.95,14.86 60.33,22.86 39.67,22.86" fill="#675126" />
+    <polygon points="38.11,25.71 61.89,25.71 66.27,33.71 33.73,33.71" fill="#7d622d" />
+    <polygon points="32.16,36.57 67.84,36.57 72.22,44.57 27.78,44.57" fill="#927234" />
+    <polygon points="26.22,47.43 73.78,47.43 78.16,55.43 21.84,55.43" fill="#a8833b" />
+    <polygon points="20.27,58.29 79.73,58.29 84.11,66.29 15.89,66.29" fill="#bd9341" />
+    <polygon points="14.33,69.14 85.67,69.14 90.06,77.14 9.94,77.14" fill="#d3a448" />
+    <polygon points="8.38,80 91.62,80 96,88 4,88" fill="#e8b44f" />
+    <g stroke-linejoin="round">
+      <polygon points="33,47 67,47 50,74" fill="#3e3c38" stroke="#12100b" stroke-width="5" paint-order="stroke" />
+      <polygon points="33,47 67,47 50,74" fill="#12100b" transform="translate(50 56) scale(0.72) translate(-50 -56)" />
+      <polygon points="33,47 67,47 50,74" fill="#8f8d88" transform="translate(50 56) scale(0.56) translate(-50 -56)" />
+      <polygon points="33,47 67,47 50,74" fill="#12100b" transform="translate(50 56) scale(0.40) translate(-50 -56)" />
+      <polygon points="33,47 67,47 50,74" fill="#ede8df" transform="translate(50 56) scale(0.30) translate(-50 -56)" />
+    </g>
+  </g>
+</svg>

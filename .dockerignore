@@ -1,0 +1,7 @@
+.git
+docs
+*.md
+fly.toml
+.nojekyll
+assets/img/og-template.html
+assets/img/icon-template.html
